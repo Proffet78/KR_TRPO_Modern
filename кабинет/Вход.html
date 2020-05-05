@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Отправлено</title>
+      <link rel="stylesheet" href="reg.css">
+      <script src="../script/jquery-3.3.1.js"></script>
+      <script src="../script/jquery.maskedinput.js"></script>
+</head>
+<body>
+   
+<div class="content aboutus">
+  <div class="wrapper">
+  
+  
+  <form class="inputreg" name="form" method="post" action="Кабинет.html">
+    <div class="wrapperreg">
+        <h1 align="center">Регистрация </h1>
+        <label for="Name">Имя</label><input type="textarea" placeholder="Иван" id="Name" required><span></span><br>
+        
+        <label for="surname">Фамилия</label><input type="textarea" placeholder="Иванов" id="Surname" required><span></span><br>
+        
+        <label for="City">Город</label><input type="textarea" placeholder="Москва" id="City" required><span></span><br>
+        
+        <label for="Phone">Телефон</label><input type="text" placeholder="+7(999)999-99-99" id="Phone"><span></span><br>
+        
+        <label for="Email">Электронная почта</label><input type="email" placeholder="example@example.ru" id="Email" required><span></span><br>
+        
+        <label for="pas">Пароль</label><input type="password" id="pas" placeholder="Пароль"><br>
+        
+        <label for="verpas">Повторите пароль</label><input type="password" id="verpas" placeholder="Пароль" required><span></span><br>
+        
+		<br>
+    </div>
+    
+    <div class="buttonreg">
+        <button name="#" type="submit" class="bt">Зарегистрироваться</button>
+    </div>
+</form>
+  
+</div>
+</div>
+</body>
+
+<script>
+	jQuery(function($){
+		$('#Phone').mask("+7(999)999-99-99");
+	});
+</script>
+
+</html>

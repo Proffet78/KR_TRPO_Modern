@@ -1,0 +1,348 @@
+/* CSS Document */
+
+/*Описание нестандартных шрифтов*/
+@font-face{
+	font-family: "OM12";
+	src: url(../fonts/OM12.ttf);
+}
+@font-face{
+	font-family: "altFont";
+	src: url(../fonts/altFont.TTF);
+}
+
+/*Стиль семантического блока header*/
+header{
+	background: #7c0219; /*Фон*/
+	position: fixed;/*Позиция(фиксированный блок)*/
+	width: 100%;/*Ширина - на весь экран*/
+	margin-left: -10px;/*Отступ слева -10 пикселей*/
+	z-index: 555;/*Позиция по оси z(на пользователя)*/
+}
+
+/*Стиль блока img под селектором .main*/
+.main img{
+	margin-top: 100px;
+	padding: 8px; /*Внутренний отступ со всех сторон*/
+	width: 100%; 
+	height: 1010px;
+	float: right; /*Прилипание*/
+	z-index: -100;
+}
+
+/*Стиль селектора .vol_feat*/
+.vol_feat{
+	display: block;/*Блочный вид*/
+	margin-top: 30px;
+	position: absolute;/*Абсолютное позиционирование*/
+	height: 30%;
+	top: 20%; /*Абсолютное позиционирование относительно верха страницы(отступ сверху) - 20%*/
+	left: 40%;
+}
+
+.vol_feat_text{
+	display: block;
+	margin-top: 0;
+	position: absolute;
+	top: 60%;
+	left: 10%;
+	color: white; /*Цвет текста - белый*/
+	text-align: center; /*Расположение текста - по центру*/
+	font-size: 50px; /*Размер шрифта*/
+}
+
+.hor_line{
+	margin-top: 25px;
+	padding: 0;
+	letter-spacing: normal; /*Интервал между символами*/
+}
+
+.wrapper{
+	width: 100%;
+}
+
+/*Стиль тега body*/
+body{
+	width: 100%;
+	height: 100%;
+	margin-top: 0;
+	padding: 0;
+	background: #7c0219; /*Фон*/
+	overflow-x: hidden;/*Полоса прокрутки оси x - убрана*/
+}
+/*Стиль вложенного в тег nav тега ul*/
+nav ul{
+	height: 100%;
+}
+
+/*Стиль вложенного тега img в тег header*/
+header img{
+	width: 90px;
+	float: left;
+	margin-top: 0px;
+}
+		
+
+nav li{
+	display: inline-table; /*элемент является таблицей как при использовании тега <table>, но при этом таблица является встроенным элементом и происходит ее обтекание другими элементами, например, текстом.*/
+	padding-left: 2%;
+	padding-right: 2%;
+	height: 100%;
+	margin-top: 2%;
+}
+
+nav li a{
+	color: white;
+	text-decoration: none; /*Декорирование текста*/
+	font-family: altFont; /*Шрифт*/
+	font-weight: bold; /*"вес" шрифта - жирный*/
+	margin-left: 0;
+	
+}
+
+/*Стиль селектора .hor_menu*/
+.hor_menu{
+	text-decoration: none;
+	list-style: none; /*Маркеров в списке нет*/
+	margin-left: 5%;
+	background: #7c0219;
+	height: 10%;
+	width: 100%;
+}
+
+/*При наведении на элементы li селектора .hor_menu*/
+.hor_menu li:hover{
+	text-decoration: underline; /*Декорирование текста - подчеркивание*/
+}
+
+#about{
+	position: relative;/*Позиционирование относительно исходного места*/
+	top:1200px;
+	height: 100%;
+	
+}
+
+.about_field{
+	width: 250px;
+	position: absolute;
+	display: block;
+	top: 135%;
+	left: 15%;
+}
+
+.ab_5500{
+	display: block;
+	margin-top: 40px;
+	position: absolute;
+	top: 136%;
+	left: 17%;
+	color: white;
+	text-align: center;
+	font-size: 90px;
+}
+
+.ab_VCC{
+	display: block;
+	position: absolute;
+	top: 180%;
+	left: 12%;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.ab_15000{
+	display: block;
+	margin-top: 20px;
+	position: absolute;
+	top: 140%;
+	left: 70%;
+	text-align: center;
+	font-size: 90px;
+	color: black;
+}
+
+.ab_gate{
+	width: 250px;
+	position: absolute;
+	display: block;
+	top: 139%;
+	left: 69%;
+}
+
+.ab_VWC{
+	display: block;
+	position: absolute;
+	top: 150%;
+	left: 67%;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.ab_pr{
+	display: block;
+	position: absolute;
+	font-size: 50px;
+	top: 160%;
+	text-align: center;
+	left: 45%;
+	color: white;
+}
+
+.VWC{
+	display: block;
+	position: absolute;
+	font-size: 20px;
+	top: 180%;
+	text-align: center;
+	left: 1%;
+	color: white;
+	font-family: altFont;
+	margin-top: 400px;
+}
+
+.VWC1{
+	display: block;
+	position: absolute;
+	font-size: 20px;
+	top: 195%;
+	text-align: center;
+	left: 1%;
+	color: white;
+	margin-top: 500px;
+}
+
+.video{
+	display: block;
+	position: absolute;
+	font-size: 20px;
+	top: 255%;
+	text-align: center;
+	left: 30%;
+	margin-top: 600px;
+}
+
+#stages{
+	display: block;
+	position: absolute;
+	top: 270%;
+	background: url(../Images/blue-bg.jpg); /*Фон картинка*/
+	width: 100%;
+	height: 1000px;
+	margin-left: -8px;
+}
+.stgs{
+	font-size: 50px;
+	color:wheat;
+	text-align: center;
+}
+
+h2{
+	color: wheat;
+	text-align: center;
+}
+
+.view_source a{
+	text-decoration: none;
+	color: aliceblue;
+}
+
+.view_source a:hover{
+	text-decoration: underline;
+}
+
+p{
+	color: aliceblue;
+}
+
+.headers{
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size: 30px;
+	color: aliceblue;
+	text-align: center;
+}
+
+.hidden>p {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size: 20px;
+}
+
+#volunteers_role{
+	position: absolute;
+	top:345%;
+	width:105%;
+	margin-left: -13px;
+	background: #7c0219;
+	height: 700px;
+}
+
+#faq{
+	position: absolute;
+	top: 420%;
+	background: url(../Images/blue-bg.jpg);
+	width: 100%;
+	margin-left: -10px;
+}
+
+.rowNew{
+	display: flex; /*Флекс-бокс*/
+	flex-direction: row; /*Флекс направление по ширине*/
+	justify-content: space-between; /*Расположение контента с расстоянием между*/
+	margin-right: 5%;
+}
+
+.rowNew a{
+	text-decoration: none;
+	color: wheat;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size: 20px;
+	margin: 100px 50px 0 50px;
+}
+
+.rowNew a:hover{
+	text-decoration: underline;
+}
+
+.columnNew{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#lk{
+	position: absolute;
+	top: 440%;
+	height: 250px;
+	width:100%;
+}
+
+.login{	
+}
+
+.inp_1{
+	border-radius: 7px;	 /*Закругление по границу*/
+}
+.inp_1:hover{
+	box-shadow: 0 0 10px #ffffff; /*Тень*/
+	transition: all .25s ease-in-out; /*Переход к тени*/
+}
+
+.inp_2{
+	border-radius: 7px;
+}
+
+.inp_2:hover{
+
+	box-shadow: 0 0 10px #ffffff;
+	transition: all .25s ease-in-out;
+}
+
+.bt{
+	border-radius: 7px;
+}
+
+.bt:hover{
+	box-shadow: 0 0 10px #ffffff;
+	transition: all .25s ease-in-out;
+}
+
