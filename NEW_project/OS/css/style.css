@@ -200,17 +200,21 @@ hr {
 
 table {
     width: 100%;   
-    height:100%;   
+    height: 100%;   
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     text-align: left;
     border-collapse: separate;
     border-spacing: 5px;
     margin: 5px;
-    background: #ECE9E0;
-    color: #656665;
+    background: #DCDCDC;
+    color: #DCDCDC;
     border: 10px solid #191970;
     border-radius: 20px;
     vertical-align: top;
+}
+
+#g bold {
+  color: #191970;
 }
 
 th {
@@ -219,7 +223,7 @@ th {
 }
 
 td {
-    background: #F5D7BF;
+    background: #8B0000;
     padding: 10px;
 }
 
