@@ -186,6 +186,44 @@ hr {
   text-align: center
 }
 
+#f bold {
+  color: #191970;
+}
+
+.login{
+	
+}
+
+.inp_1{
+	border-radius: 7px;
+	
+	
+}
+.inp_1:hover{
+	box-shadow: 0 0 10px #ffffff;
+	transition: all .25s ease-in-out;
+}
+
+.inp_2{
+	border-radius: 7px;
+}
+
+.inp_2:hover{
+
+	box-shadow: 0 0 10px #ffffff;
+	transition: all .25s ease-in-out;
+}
+
+.bt{
+	border-radius: 7px;
+}
+
+.bt:hover{
+
+	box-shadow: 0 0 10px #ffffff;
+	transition: all .25s ease-in-out;
+}
+
 #f h3 {
   color: white;
 }
