@@ -113,7 +113,7 @@ hr {
 /* Portfolio Wrap */
 
 #portfoliowrap {
-  background: url(../img/portfolio-bg.jpg) no-repeat center top;
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../img/portfolio-bg.jpg) no-repeat center top;  
   margin-top: 0px;
   padding-top: 70px;
   text-align: center;
@@ -129,6 +129,33 @@ hr {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.rowNew{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-right: 5%;
+}
+
+.rowNew a{
+	text-decoration: none;
+	color: wheat;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size: 20px;
+	margin: 100px 50px 0 50px;
+
+}
+
+.rowNew a:hover{
+	text-decoration: underline;
+
+}
+
+.columnNew{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 
 #portfoliowrap h3 {
