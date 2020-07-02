@@ -23,10 +23,10 @@ h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: #778492;
+  color: #ffffff;
 }
 a {
-  color: #3aaa64;
+  color: #ffffff;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -35,7 +35,7 @@ a {
 a:hover {
   text-decoration: underline;
   color: #5f6b77;
-  color: #2d844e;
+  color: #8B0000;
 }
 .btn,
 a.btn {
@@ -84,7 +84,7 @@ a.btn-cta-secondary:hover,
   color: #fff;
 }
 .text-highlight {
-  color: #32383e;
+  color: #ffffff;
 }
 .label-theme {
   background: #8B0000;
@@ -92,7 +92,7 @@ a.btn-cta-secondary:hover,
 }
 a.dotted-link {
   border-bottom: 1px dotted #778492;
-  color: #778492;
+  color: #ffffff;
 }
 a.dotted-link:hover {
   text-decoration: none;
@@ -125,13 +125,13 @@ iframe {
   margin-right: 30px;
 }
 .header .profile-content .name {
-  color: #d8d8d8;
+  color: #ffffff;
   font-size: 38px;
   margin-bottom: 5px;
   margin-top: 30px;
 }
 .header .profile-content .desc {
-  color: #989da3;
+  color: #ffffff;
   font-family: "Lato", arial, sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -155,7 +155,7 @@ iframe {
   text-align: center;
 }
 .header .profile-content .social a:hover {
-  background: #ffffff;
+  background: #191970;
 }
 .header .profile-content .social a .fa {
   font-size: 20px;
@@ -170,13 +170,13 @@ iframe {
   margin-bottom: 30px;
 }
 .section .section-inner {
-  background: #ffffff;
+  background: #191970;
   padding: 30px;
 }
 .section .heading {
   margin-top: 0;
   margin-bottom: 30px;
-  color: #545e69;
+  color: #ffffff;
   font-size: 24px;
 }
 .section .content .more-link .fa {
@@ -534,3 +534,6 @@ iframe {
     width: 1360px;
   }
 }
+
+
+
