@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Volunteer{% endblock %}
+
+{% block cssjs %}
+<link ref='stylesheet' href="{% static 'OS/css/registr.css' %}">
+<style>
+ .password-control {
+    position: absolute;
+    top: 274px;
+    left: 58%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+}
+.password-control2 {
+    position: absolute;
+    top: 309px;
+    left: 58%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+}
+.password-control.view {
+    background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+}
+.Ractivity {
+
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+form {
+    float: left;
+    width: 330px;
+    padding: 15px;
+    border-radius: 0 20px 20px 0;
+    color:#51382a;
+    display: flex;
+    flex-direction: column;
+}
+#reg {
+    margin-bottom: 10px;
+    position: relative;
+    width: 250px;   
+    height: 25px;
+    }
+#password-input {
+    margin-bottom: 10px;
+    position: relative;
+    width: 250px;   
+    height: 25px;
+}
+#password-input2 {
+    margin-bottom: 10px;
+    position: relative;
+    width: 250px;   
+    height: 25px;
+}
+
+
+#reg[type="password"]::-ms-reveal {
+        color: rgb(131, 131, 131);
+        background-color: red;
+    }
+
+</style>
+<script>
+ function show_hide_password(target){
+	var input = document.getElementById('password-input');
+	if (input.getAttribute('type') == 'password') {
+		target.classList.add('view');
+		input.setAttribute('type', 'text');
+	} else {
+		target.classList.remove('view');
+		input.setAttribute('type', 'password');
+	}
+	return false;
+}
+function show_hide_password2(target){
+	var input = document.getElementById('password-input2');
+	if (input.getAttribute('type') == 'password') {
+		target.classList.add('view');
+		input.setAttribute('type', 'text');
+	} else {
+		target.classList.remove('view');
+		input.setAttribute('type', 'password');
+	}
+	return false;
+}
+
+function validateForm() {
+	var x = document.forms["RegistrForm"]["password"].value;
+	var x2 = document.forms["RegistrForm"]["enterPassword"].value;
+    if (x !=x2) {
+        alert("Пароли не совпадают, введите заново");
+        return false;
+    }
+} 
+</script>
+{% endblock %}
+
+{% block content %}
+
+<div class ="Ractivity">
+ <form id='RegistrForm' name="RegistrForm" onsubmit="return validateForm()" method ='post' >
+     <input required autocomplete='off'  name='email' id="reg" type='email' placeholder="Email" form='RegistrForm'>
+     <input required autocomplete='off' id="password-input"  type='password' placeholder="Пароль" name='password' form='RegistrForm'>
+     <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+     <input required autocomplete='off' id="password-input2" type='password' placeholder="Подтверждение пароля"  name='enterPassword'  id='enterPassword' form='RegistrForm'>
+     <a href="#" class="password-control2"  onclick="return show_hide_password2(this);"></a>
+     <script src="https://www.google.com/recaptcha/api.js?render=6LcTrK8ZAAAAADMOlMIu9gR4agsDqidpePDALbva"></script>
+     <script>
+         grecaptcha.ready(function () {
+             grecaptcha.execute('6LcTrK8ZAAAAADMOlMIu9gR4agsDqidpePDALbva', { action: 'contact' }).then(function (token) {
+                 var recaptchaResponse = document.getElementById('recaptchaResponse');
+                 recaptchaResponse.value = token;
+             });
+         });
+     </script>
+     <button type='submit' id='Registr' form='RegistrForm' >Зарегистрироваться</button>
+  </form>
+</div>
+{% endblock %}
