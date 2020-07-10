@@ -568,3 +568,51 @@ td {
   padding-left: 10px;
 }
 
+.Ractivity {
+  /* display: inline-block; */
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: 90%;
+  right: 55px;
+  margin-top: -140px;
+  transition-duration: 1s;
+  background-color: #23222275;
+  width: 300px;
+  border-radius: 7px;
+}
+
+.Ractivity > b {
+  color: white;
+  border-radius: 7px;
+}
+
+#reg {
+margin-bottom: 5px;
+border-radius: 7px;
+width: 200px;
+}
+#password-input {
+  margin-bottom: 5px;
+  border-radius: 7px;
+  width: 200px;
+}
+
+#Registr {
+width: 200px;
+}
+
+.password-control {
+  position: absolute;
+  bottom: 53px;
+  left: 74%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+ }
+ .password-control.view {
+  background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+ }

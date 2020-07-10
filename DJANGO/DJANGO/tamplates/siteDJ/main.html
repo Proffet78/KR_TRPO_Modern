@@ -26,11 +26,16 @@
    <!-- <script src="{% static 'OS/lib/php-mail-form/validate.js' %}"></script> -->
    <script src="{% static 'OS/lib/chart/chart.js' %}"></script>
    <script src="{% static 'OS/lib/easing/easing.min.js' %}"></script>
- 
+   <script src="https://www.google.com/recaptcha/api.js"></script>
    <!-- Template Main Javascript File -->
    <script src="{% static 'OS/js/main.js' %}"></script>
 
   <script type="text/javascript" src="{% static 'OS/script/guiders.js' %}"></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("RegistrForm").submit();
+    }
+  </script>
 {% endblock %}
 
 {% block content %}
@@ -328,8 +333,21 @@
               <h3><bold><input class="bt" type="submit" value="Вход"></bold></h3>		
           </form>
           <form> <!--Кнопка для перехода на страницу регистрации-->
-              <h3><bold><input class="bt" type="button" value="Зарегистрироваться" onClick='location.href=""'></bold></h3>
+              <h3><bold><input class="bt" type="button" value="Зарегистрироваться" onClick=Registration()></bold></h3>
           </form>
+          <div class ="Ractivity">
+            <b>Регистрация</b>
+            <form id='RegistrForm' name="RegistrForm" onsubmit="return validateForm()" method ='post' >
+                <input required autocomplete='off'  name='email' id="reg" type='email' placeholder="Email" form='RegistrForm'>
+                <input required autocomplete='off' id="password-input"  type='password' placeholder="Пароль" name='password' form='RegistrForm'>
+                <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                <!-- <button class="g-recaptcha" 
+                data-sitekey="6LegBrAZAAAAAMaWM-EwwTblIxOiFPq4gm8sw5oJ" 
+                data-callback='onSubmit' 
+                data-action='submit'>Submit</button>-->
+                <button type='submit' id='Registr' form='RegistrForm' >Зарегистрироваться</button> 
+             </form>
+           </div>
           <br>
           <br>
           <br>
