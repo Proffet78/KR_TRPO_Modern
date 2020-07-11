@@ -1,0 +1,63 @@
+.password-control {
+ position: absolute;
+ top: 274px;
+ left: 58%;
+ display: inline-block;
+ width: 20px;
+ height: 20px;
+ background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+}
+.password-control2 {
+ position: absolute;
+ top: 309px;
+ left: 58%;
+ display: inline-block;
+ width: 20px;
+ height: 20px;
+ background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+}
+.password-control.view {
+ background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+}
+.Ractivity {
+
+ display: inline-block;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+form {
+ float: left;
+ width: 330px;
+ padding: 15px;
+ border-radius: 0 20px 20px 0;
+ color:#51382a;
+ display: flex;
+ flex-direction: column;
+ /* margin-top: -20px; */
+ margin-left:11%;
+}
+#reg {
+ margin-bottom: 10px;
+ position: relative;
+ width: 250px;   
+ height: 25px;
+ }
+#password-input {
+ margin-bottom: 10px;
+ position: relative;
+ width: 250px;   
+ height: 25px;
+}
+#password-input2 {
+ margin-bottom: 10px;
+ position: relative;
+ width: 250px;   
+ height: 25px;
+}
+
+
+#reg[type="password"]::-ms-reveal {
+ color: rgb(131, 131, 131);
+ background-color: red;
+ }

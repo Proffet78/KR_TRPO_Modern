@@ -1,3 +1,4 @@
 from django.db import models
 
-# Create your models here.
+class Form_AboutMe(models.Model):
+ aboutme_text = models.TextField('Обо мне')

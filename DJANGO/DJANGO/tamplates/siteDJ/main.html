@@ -26,14 +26,37 @@
    <!-- <script src="{% static 'OS/lib/php-mail-form/validate.js' %}"></script> -->
    <script src="{% static 'OS/lib/chart/chart.js' %}"></script>
    <script src="{% static 'OS/lib/easing/easing.min.js' %}"></script>
- 
+   <script src="https://www.google.com/recaptcha/api.js"></script>
    <!-- Template Main Javascript File -->
    <script src="{% static 'OS/js/main.js' %}"></script>
 
   <script type="text/javascript" src="{% static 'OS/script/guiders.js' %}"></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("RegistrForm").submit();
+    }
+  </script>
 {% endblock %}
 
 {% block content %}
+    <!-- Menu -->
+    <nav class="menu" id="theMenu">
+      <div class="menu-wrap">
+        <h1 class="logo"><a href="index.html#home">Volunteers</a></h1>
+        <i class="fa fa-times-circle menu-close"></i>
+        <a href="#home" class="smoothscroll">О программе</a>
+        <a href="#services" class="smoothscroll">Этапы</a>
+        <a href="#portfolio" class="smoothscroll">Роли</a>
+        <a href="#about" class="smoothscroll">События</a>
+        <a href="#contact" class="smoothscroll">Личный кабинет</a>
+        <a href="index.html#"><i class="fa fa-vk"></i></a>
+        <a href="index.html#"><i class="fa fa-instagram"></i></a>
+        <a href="index.html#"><i class="fa fa-twitter"></i></a>  
+      </div>
+  
+      <!-- Menu button -->
+      <div id="menuToggle"><i class="fa fa-bars"></i></div>
+    </nav>
 <!-- ========== HEADER SECTION - НАЧАЛЬНАЯ ========== -->
 <section id="home" name="home"></section>
 <div id="headerwrap">
@@ -310,8 +333,21 @@
               <h3><bold><input class="bt" type="submit" value="Вход"></bold></h3>		
           </form>
           <form> <!--Кнопка для перехода на страницу регистрации-->
-              <h3><bold><input class="bt" type="button" value="Зарегистрироваться" onClick='location.href=""'></bold></h3>
+              <h3><bold><input class="bt" type="button" value="Зарегистрироваться" onClick=Registration()></bold></h3>
           </form>
+          <div class ="Ractivity">
+            <b>Регистрация</b>
+            <form id='RegistrForm' name="RegistrForm" onsubmit="return validateForm()" method ='post' >
+                <input required autocomplete='off'  name='email' id="reg" type='email' placeholder="Email" form='RegistrForm'>
+                <input required autocomplete='off' id="password-input"  type='password' placeholder="Пароль" name='password' form='RegistrForm'>
+                <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                <!-- <button class="g-recaptcha" 
+                data-sitekey="6LegBrAZAAAAAMaWM-EwwTblIxOiFPq4gm8sw5oJ" 
+                data-callback='onSubmit' 
+                data-action='submit'>Submit</button>-->
+                <button type='submit' id='Registr' form='RegistrForm' >Зарегистрироваться</button> 
+             </form>
+           </div>
           <br>
           <br>
           <br>
