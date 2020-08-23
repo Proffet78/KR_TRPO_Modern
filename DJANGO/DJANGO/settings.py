@@ -28,7 +28,7 @@ SECRET_KEY = '&zuyzg)r&f5uf@bx*j^hvzjva&0hhaece#h9420ioemmdb$q!6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['jennyshel18.pythonanywhere.com']
 
 
 # Application definition
@@ -126,7 +126,8 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "DJANGO/static")
-   # '/var/www/static/',
+  
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, '/var/www/DJANGO/static/')
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
