@@ -1,11 +1,8 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Volunteer{% endblock %}
 
-<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
-<head>
-    <title>Responsive HTML5 Website Template for Developers | 3rd Wave Media</title>
-    <!-- Meta -->
+{% block cssjs %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,20 +12,19 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
     
-    <link rel="stylesheet" type="text/css" href="LK/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="LK/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="LK/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="{% static 'LK/bootstrap/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'LK/font-awesome/css/font-awesome.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'LK/css/styles.css' %}" />
         
-    <script type="text/javascript" src="LK/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="LK/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="{% static 'LK/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'LK/js/jquery-1.10.2.min.js' %}"></script>
 
     <!-- github acitivity css -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
     <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
-    
-</head> 
+    {% endblock %}
 
-<body>
+    {% block content %}
     <!-- ******HEADER****** -->         
     <header class="header">
         <div class="container">                       
@@ -382,6 +378,4 @@
         </div><!--//container-->
     </footer><!--//footer-->
  
-   
-</body>
-</html>
+    {% endblock %}

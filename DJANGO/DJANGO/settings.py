@@ -27,19 +27,22 @@ SECRET_KEY = '&zuyzg)r&f5uf@bx*j^hvzjva&0hhaece#h9420ioemmdb$q!6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = ['jennyshel18.pythonanywhere.com']
+# CSRF_COOKIE_SECURE = True
+ALLOWED_HOSTS = ['jennyshel18.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'siteDJ.apps.SitedjConfig',
+    'DJANGO',
+    'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles'
 ]
 
 MIDDLEWARE = [
@@ -53,6 +56,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'DJANGO.urls'
+SITE_ID = 1
 
 TEMPLATES = [
     {

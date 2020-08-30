@@ -305,7 +305,7 @@
           <br>
             <form> <!--Кнопка для перехода на страницу регистрации-->
                 <h3><b>Ты реализуешь свой проект? Тебе нужны волонтёры? Жми кнопку и зарегистрируй свое событие!</b></h3>
-              <h3><input class="bt" type="button" value="Зарегистрировать событие" onClick='location.href="EvenReg.html"'></h3>
+              <h3><input class="bt" type="button" value="Зарегистрировать событие" onClick='location.href="http://jennyshel18.pythonanywhere.com/siteDJ/EvenReg/"'></h3>
           </form>
           <br>
         </div>
@@ -338,7 +338,8 @@
           <div class ="Ractivity">
             <b>Регистрация</b>
             <form id='RegistrForm' name="RegistrForm" onsubmit="return validateForm()" method ='post' >
-                <input required autocomplete='off'  name='email' id="reg" type='email' placeholder="Email" form='RegistrForm'>
+              {% csrf_token %}  
+              <input required autocomplete='off'  name='email' id="reg" type='email' placeholder="Email" form='RegistrForm'>
                 <input required autocomplete='off' id="password-input"  type='password' placeholder="Пароль" name='password' form='RegistrForm'>
                 <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
                 <!-- <button class="g-recaptcha" 

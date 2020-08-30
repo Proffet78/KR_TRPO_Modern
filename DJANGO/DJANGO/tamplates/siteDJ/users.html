@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Django</title>
+</head>
+<body class="container">
+
+    {% if people.count > 0 %}
+    <h2>Список пользователей:</h2>
+    <table>
+        <tr><th>Id</th><th>Email</th><th>Пароль</th></tr>
+        {% for person in people %}
+        <tr><td>{{ person.id }}</td><td>{{ person.email }}</td><td>{{ person.password }}</td></tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+</body>
+</html>
