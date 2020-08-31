@@ -1,4 +1,6 @@
-from django.db import models
+﻿from django.db import models
 
-class Form_AboutMe(models.Model):
- aboutme_text = models.TextField('Обо мне')
+
+class UserOne (models.Model):
+  email = models.CharField(max_length=30)
+  password = models.CharField(max_length=20)
