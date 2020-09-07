@@ -126,16 +126,14 @@ hr {
         word-wrap: break-word;
     }
     
-    bt {
-         width: 50%;
+    input {
+         width: 68px;
+        height: auto;
+        font-size: 8px;
     }
     h3
     {
         font-size: 17px;
-    }
-    bt
-    {
-        
     }
 }
 
