@@ -1,0 +1,381 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Volunteer{% endblock %}
+
+{% block cssjs %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Website landing Page for Developers">
+    <meta name="author" content="3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'LK/bootstrap/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'LK/font-awesome/css/font-awesome.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'LK/css/styles.css' %}" />
+        
+    <script type="text/javascript" src="{% static 'LK/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'LK/js/jquery-1.10.2.min.js' %}"></script>
+
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
+    {% endblock %}
+
+    {% block content %}
+    <!-- ******HEADER****** -->         
+    <header class="header">
+        <div class="container">                       
+            
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h1 class="heading">Регистрация события</h1>
+                        <div class="content">
+                        
+                         
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <section class="latest section">
+                    <div class="section-inner">
+                       
+                        <div class="content">    
+                                   
+        <!-- User info -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+          <h4 class="panel-title">Название события</h4>  <!--//Заголовок таблицы-->
+         </div> 
+             <div class="panel-body">
+            <table class="table profile__table">
+              <tbody>
+                <tr>
+             <label for="name">Название события </label>
+      <input id="name" style="padding-bottom:5px ;
+                     width: 350px;">
+                 
+                </tr>
+                            
+              </tbody>
+            </table>
+          </div>
+        </div>  
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+      
+                    
+    
+               <section class="latest section">
+                    <div class="section-inner">
+                       
+                        <div class="content">    
+                                   
+        <!-- User info -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+          <h4 class="panel-title">Описание события</h4>  <!--//Заголовок таблицы-->
+          </div> 
+          <div class="panel-body">
+            <table class="table profile__table">
+              <tbody>
+                <tr>
+                    <tr>
+                     
+                     <label for="description">Описание события </label>
+                        
+                        <textarea id="description" name="description" 
+  style="padding-bottom:250px ;
+         resize: vertical;
+  font-size:16px;
+  height: 300px;
+  width: 500px;" ></textarea>
+                
+                </tr>
+                
+                            
+              </tbody>
+            </table>
+          </div>
+        </div>  
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+        
+        
+        
+                <section class="projects section">
+                    <div class="section-inner">
+                       
+                        <div class="content">
+                            <!-- Volontier info -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+          <h4 class="panel-title">Информация об организаторе</h4>  <!--//Заголовок таблицы-->
+          </div>          
+          <div class="panel-body">
+            <table class="table profile__table">
+              <tbody>
+                <tr>
+                       
+                     <label for="info">Информация об организаторе </label>
+                        
+                       <textarea id="info" name="info" 
+  style="padding-bottom:250px ;
+         resize: vertical;
+  font-size:16px;
+  height: 300px;
+  width: 500px;" ></textarea>
+                 
+                </tr>
+                  
+                                       
+              </tbody>
+            </table>
+          </div>
+        </div>
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+                    
+                    
+                    
+                    
+                      
+                <section class="latest section">
+                    <div class="section-inner">
+                       
+                        <div class="content">    
+                                   
+        <!-- User info -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+          <h4 class="panel-title">Необходимое кол-во волонтеров</h4>  <!--//Заголовок таблицы-->
+          </div> 
+          <div class="panel-body">
+            <table class="table profile__table">
+              <tbody>
+                <tr>
+                <label for="count">кол-во волонтеров </label>
+      <input id="count" style="padding-bottom:5px ;
+                     width: 350px;">
+                </tr>
+                            
+              </tbody>
+            </table>
+          </div>
+        </div>  
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+        
+                    
+                    
+                    
+                    
+                    
+                                    <section class="latest section">
+                    <div class="section-inner">
+                       
+                        <div class="content">    
+                                   
+        <!-- User info -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+          <h4 class="panel-title">ФИО контактного лица</h4>  <!--//Заголовок таблицы-->
+          </div> 
+          <div class="panel-body">
+            <table class="table profile__table">
+              <tbody>
+                <tr>
+                       <p> <label for="FIO">Фамилия  </label>
+      <input id="FIO" style="padding-bottom:5px ;
+                             width: 350px;"></p>
+                    
+                   <p>  <label for="FIO">    Имя         </label>
+      <input id="FIO" style="padding-bottom:5px ;
+                             width: 350px;"></p>
+                     <p>  <label for="FIO">Отчетсво  </label>
+      <input id="FIO" style="padding-bottom:5px ;
+                             width: 350px;"></p>
+                    
+                </tr>
+               
+                            
+              </tbody>
+            </table>
+          </div>
+        </div>  
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+        
+                    
+             
+                    
+                    
+                    
+                    
+                    
+                    <section class="latest section">
+                    <div class="section-inner">
+                       
+                        <div class="content">    
+                                   
+        <!-- User info -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+          <h4 class="panel-title">Электронная почта</h4>  <!--//Заголовок таблицы-->
+          </div> 
+          <div class="panel-body">
+            <table class="table profile__table">
+              <tbody>
+                <tr>
+                 <label for="mail">Почта  </label>
+      <input id="mail" style="padding-bottom:5px ;
+                             width: 350px;">
+                </tr>
+                            
+              </tbody>
+            </table>
+          </div>
+        </div>  
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+        
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <section class="latest section">
+                    <div class="section-inner">
+                       
+                        <div class="content">    
+                                   
+        <!-- User info -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+          <h4 class="panel-title">Телефон</h4>  <!--//Заголовок таблицы-->
+          </div> 
+          <div class="panel-body">
+            <table class="table profile__table">
+              <tbody>
+                <tr>
+                  <label for="phone">Номер телефона  </label>
+      <input id="phone" style="padding-bottom:5px ;
+                             width: 350px;">
+                </tr>
+                            
+              </tbody>
+            </table>
+          </div>
+        </div>  
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+        
+                    
+      
+                    
+                    
+                    
+                    
+                    
+                    <section class="latest section">
+                    <div class="section-inner">
+                       
+                        <div class="content">    
+                                   
+        <!-- User info -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+          <h4 class="panel-title">Контактная информация</h4>  <!--//Заголовок таблицы-->
+          </div> 
+          <div class="panel-body">
+            <table class="table profile__table">
+              <tbody>
+                <tr>
+                  <label for="sait">Адрес сайта  </label>
+      <input id="sait" style="padding-bottom:5px ;
+                             width: 350px;">
+                </tr>                  
+                            
+              </tbody>
+            </table>
+          </div>
+        </div>  
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+        
+                    
+                  
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                   
+                    
+                
+                <aside class="credits aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Ссылки</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <h2>
+                    <a href="https://vk.com/"><i class="fa fa-vk"></i> Мы в ВКонтакте</a><br>
+                    <a href="https://www.instagram.com/?hl=ru"><i class="fa fa-instagram"></i> Мы в Instagramm</a><br>
+                    <a href="https://twitter.com/explore"><i class="fa fa-twitter"></i> Мы в Twitter</a><br>
+                </h2>
+                          
+                            </ul>
+                            
+                           
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+              
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <small class="copyright">Designed with  <a href="http://themes.3rdwavemedia.com" target="_blank">Виноградов, Машарин(немного Коваленко)</a> для волонтеров</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    {% endblock %}
