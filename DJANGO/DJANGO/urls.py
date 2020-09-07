@@ -19,7 +19,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('siteDJ/', include('siteDJ.urls')),
+    path('', include('siteDJ.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
     path('registrEvent/', include('siteDJ.urls')),
     path('admin/', admin.site.urls),
 ]
