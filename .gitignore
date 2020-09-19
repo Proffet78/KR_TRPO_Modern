@@ -33,6 +33,4 @@ DJANGO/DJANGO/static/OS/lib/font-awesome/fonts/fontawesome-webfont.svg
 DJANGO/DJANGO/static/OS/lib/font-awesome/fonts/fontawesome-webfont.ttf
 DJANGO/DJANGO/static/OS/lib/font-awesome/fonts/fontawesome-webfont.woff
 DJANGO/db.sqlite3
-
-
-
+*.pyc
