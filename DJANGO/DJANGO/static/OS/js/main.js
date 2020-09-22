@@ -88,3 +88,11 @@ function show_hide_password(target){
 	}
 	return false;
 }
+window.onload = function () {
+	document.getElementById('login').onclick = function() {
+		window.location.href = 'accounts/login';
+	};
+	document.getElementById('registr').onclick = function() {
+		window.location.href = 'signup';
+	};
+}

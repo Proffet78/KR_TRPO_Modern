@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import UserOne, UserTwo
 
-# Register your models here.
+admin.site.register(UserOne)
+admin.site.register(UserTwo)
